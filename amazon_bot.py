@@ -294,7 +294,7 @@ async def otz(call: CallbackQuery, state: FSMContext):
           f.write(new_data)
 
 
-          await call.message.answer(
+        await call.message.answer(
             f"<b>Контакт успешно изменен !</b>\n"
             f"<b>Посмотреть как выглядит: </b>\n\n"
             f"http://81.90.181.16:8080\n"
@@ -349,7 +349,7 @@ async def leg(call: CallbackQuery, state: FSMContext):
         
         with open ('index.html', 'w') as f:
           f.write(new_data)
-          await call.message.answer(
+        await call.message.answer(
             f"<b>Контакт успешно изменен !</b>\n"
             f"<b>Посмотреть как выглядит: </b>\n\n"
             f"http://81.90.181.16:8080\n"
@@ -404,7 +404,7 @@ async def rezerv(call: CallbackQuery, state: FSMContext):
         
         with open ('index.html', 'w') as f:
           f.write(new_data)
-          await call.message.answer(
+        await call.message.answer(
             f"<b>Контакт успешно изменен !</b>\n"
             f"<b>Посмотреть как выглядит: </b>\n\n"
             f"http://81.90.181.16:8080\n"
@@ -458,7 +458,7 @@ async def whatsApp(call: CallbackQuery, state: FSMContext):
         
         with open ('index.html', 'w') as f:
           f.write(new_data)
-          await call.message.answer(
+        await call.message.answer(
             f"<b>Контакт успешно изменен !</b>\n"
             f"<b>Посмотреть как выглядит: </b>\n\n"
             f"http://81.90.181.16:8080\n"
@@ -513,7 +513,7 @@ async def rab(call: CallbackQuery, state: FSMContext):
         
         with open ('index.html', 'w') as f:
           f.write(new_data)
-          await call.message.answer(
+        await call.message.answer(
             f"<b>Контакт успешно изменен !</b>\n"
             f"<b>Посмотреть как выглядит: </b>\n\n"
             f"http://81.90.181.16:8080\n"
@@ -569,7 +569,7 @@ async def hudra(call: CallbackQuery, state: FSMContext):
         
         with open ('index.html', 'w') as f:
           f.write(new_data)
-          await call.message.answer(
+        await call.message.answer(
             f"<b>Контакт успешно изменен !</b>\n"
             f"<b>Посмотреть как выглядит: </b>\n\n"
             f"http://81.90.181.16:8080\n"
@@ -624,7 +624,7 @@ async def bbb(call: CallbackQuery, state: FSMContext):
         
         with open ('index.html', 'w') as f:
           f.write(new_data)
-          await call.message.answer(
+        await call.message.answer(
             f"<b>Контакт успешно изменен !</b>\n"
             f"<b>Посмотреть как выглядит: </b>\n\n"
             f"http://81.90.181.16:8080\n"
@@ -679,7 +679,7 @@ async def texp(call: CallbackQuery, state: FSMContext):
         
         with open ('index.html', 'w') as f:
           f.write(new_data)
-          await call.message.answer(
+        await call.message.answer(
             f"<b>Контакт успешно изменен !</b>\n"
             f"<b>Посмотреть как выглядит: </b>\n\n"
             f"http://81.90.181.16:8080\n"
@@ -738,7 +738,7 @@ async def oper(call: CallbackQuery, state: FSMContext):
         with open ('index.html', 'w') as f:
           f.write(new_data)
 
-          await call.message.answer(
+        await call.message.answer(
             f"<b>Контакт успешно изменен !</b>\n"
             f"<b>Посмотреть как выглядит: </b>\n\n"
             f"http://81.90.181.16:8080\n"
