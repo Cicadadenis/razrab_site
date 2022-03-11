@@ -201,7 +201,11 @@ async def logot(call: CallbackQuery, state: FSMContext):
           with open ('index.html', 'w') as f:
             f.write(new_data)
 
-          await call.message.answer("<b>Логотип успешно изменен !</b>", reply_markup=xxx)
+          await call.message.answer(
+            f"<b>Логотип успешно изменен !</b>\n"
+            f"<b>Посмотреть как выглядит: </b>\n\n"
+            f"http://81.90.181.16:8080\n"
+            , reply_markup=xxx)
         else:
           await call.message.answer("Не верный формат")
 
@@ -230,7 +234,11 @@ async def fon(call: CallbackQuery, state: FSMContext):
           
           with open ('index.html', 'w') as f:
             f.write(new_data)
-        await call.message.answer("<b>Фон успешно изменен !</b>", reply_markup=xxx)
+          await call.message.answer(
+            f"<b>Фон успешно изменен !</b>\n"
+            f"<b>Посмотреть как выглядит: </b>\n\n"
+            f"http://81.90.181.16:8080\n"
+            , reply_markup=xxx)
 
 
 
@@ -286,19 +294,11 @@ async def otz(call: CallbackQuery, state: FSMContext):
           f.write(new_data)
 
 
-        await message.answer(
-          f"<b>Контакт успешно изменен на {sms}</b>\n"
-          f"<b>Сейчас Установлены такие контакты: </b>\n\n"
-          f"<b>📋 Оператор:</b>  <code>{oer}</code>\n"
-          f"<b>📋 Техпродажи:</b> <code>{texx}</code>\n"
-          f"<b>📋 Бот:</b>  <code>{bbboot}</code>\n"
-          f"<b>📋 Hudra:</b>  <code>{gidra}</code>\n"
-          f"<b>📋 Работа:</b> <code>{rabota}</code>\n"
-          f"<b>📋 Работа WhatsApp:</b>  <code>{wc}</code>\n"
-          f"<b>📋 Резерв:</b> <code>{rez}</code>\n"
-          f"<b>📋 Legal:</b>  <code>{legal}</code>\n"
-          f"<b>📋 Отзывы:</b> <code>{otziv}</code>\n\n"
-          f"<b>Изменение контактов</b>", reply_markup=xxx)
+          await call.message.answer(
+            f"<b>Контакт успешно изменен !</b>\n"
+            f"<b>Посмотреть как выглядит: </b>\n\n"
+            f"http://81.90.181.16:8080\n"
+            , reply_markup=xxx)
 
 @dp.callback_query_handler(text="leg", state="*")
 async def leg(call: CallbackQuery, state: FSMContext):
@@ -349,7 +349,11 @@ async def leg(call: CallbackQuery, state: FSMContext):
         
         with open ('index.html', 'w') as f:
           f.write(new_data)
-        await message.answer(f"<b>Контакт успешно изменен на \n{sms}</b>", reply_markup=xxx)
+          await call.message.answer(
+            f"<b>Контакт успешно изменен !</b>\n"
+            f"<b>Посмотреть как выглядит: </b>\n\n"
+            f"http://81.90.181.16:8080\n"
+            , reply_markup=xxx)
 
 
 @dp.callback_query_handler(text="rezerv", state="*")
@@ -400,7 +404,11 @@ async def rezerv(call: CallbackQuery, state: FSMContext):
         
         with open ('index.html', 'w') as f:
           f.write(new_data)
-        await message.answer(f"<b>Контакт успешно изменен на {sms}</b>", reply_markup=xxx)
+          await call.message.answer(
+            f"<b>Контакт успешно изменен !</b>\n"
+            f"<b>Посмотреть как выглядит: </b>\n\n"
+            f"http://81.90.181.16:8080\n"
+            , reply_markup=xxx)
 
 @dp.callback_query_handler(text="whatsApp", state="*")
 async def whatsApp(call: CallbackQuery, state: FSMContext):
@@ -450,7 +458,11 @@ async def whatsApp(call: CallbackQuery, state: FSMContext):
         
         with open ('index.html', 'w') as f:
           f.write(new_data)
-        await message.answer(f"<b>Контакт успешно изменен на {sms}</b>", reply_markup=xxx)
+          await call.message.answer(
+            f"<b>Контакт успешно изменен !</b>\n"
+            f"<b>Посмотреть как выглядит: </b>\n\n"
+            f"http://81.90.181.16:8080\n"
+            , reply_markup=xxx)
 
 
 @dp.callback_query_handler(text="rab", state="*")
@@ -501,7 +513,11 @@ async def rab(call: CallbackQuery, state: FSMContext):
         
         with open ('index.html', 'w') as f:
           f.write(new_data)
-        await message.answer(f"<b>Контакт успешно изменен на {sms}</b>", reply_markup=xxx)
+          await call.message.answer(
+            f"<b>Контакт успешно изменен !</b>\n"
+            f"<b>Посмотреть как выглядит: </b>\n\n"
+            f"http://81.90.181.16:8080\n"
+            , reply_markup=xxx)
 
 
 
@@ -553,7 +569,11 @@ async def hudra(call: CallbackQuery, state: FSMContext):
         
         with open ('index.html', 'w') as f:
           f.write(new_data)
-        await message.answer(f"<b>Контакт успешно изменен на \n{sms}</b>", reply_markup=xxx)
+          await call.message.answer(
+            f"<b>Контакт успешно изменен !</b>\n"
+            f"<b>Посмотреть как выглядит: </b>\n\n"
+            f"http://81.90.181.16:8080\n"
+            , reply_markup=xxx)
 
 
 @dp.callback_query_handler(text="bbb", state="*")
@@ -604,7 +624,11 @@ async def bbb(call: CallbackQuery, state: FSMContext):
         
         with open ('index.html', 'w') as f:
           f.write(new_data)
-        await message.answer(f"<b>Контакт успешно изменен на {sms}</b>", reply_markup=xxx)
+          await call.message.answer(
+            f"<b>Контакт успешно изменен !</b>\n"
+            f"<b>Посмотреть как выглядит: </b>\n\n"
+            f"http://81.90.181.16:8080\n"
+            , reply_markup=xxx)
 
 
 @dp.callback_query_handler(text="tex", state="*")
@@ -655,7 +679,11 @@ async def texp(call: CallbackQuery, state: FSMContext):
         
         with open ('index.html', 'w') as f:
           f.write(new_data)
-        await message.answer(f"<b>Контакт успешно изменен на {sms}</b>", reply_markup=xxx)
+          await call.message.answer(
+            f"<b>Контакт успешно изменен !</b>\n"
+            f"<b>Посмотреть как выглядит: </b>\n\n"
+            f"http://81.90.181.16:8080\n"
+            , reply_markup=xxx)
 
 
 
@@ -710,38 +738,11 @@ async def oper(call: CallbackQuery, state: FSMContext):
         with open ('index.html', 'w') as f:
           f.write(new_data)
 
-        await message.answer(f"<b>Контакт успешно изменен на {sms}</b>", reply_markup=xxx)
+          await call.message.answer(
+            f"<b>Контакт успешно изменен !</b>\n"
+            f"<b>Посмотреть как выглядит: </b>\n\n"
+            f"http://81.90.181.16:8080\n"
+            , reply_markup=xxx)
 
 if __name__ == "__main__":
     executor.start_polling(dp)
-
-
-    with open ('index.html', 'r') as f:
-      old_data = f.readlines()
-      tt = old_data[518]
-      tat = tt.split('"')
-      otziv = tat[7]
-      tt1 = old_data[505]
-      tat1 = tt1.split('"')
-      legal = tat1[7]
-      tt2 = old_data[497]
-      tat2 = tt2.split('"')
-      rez = tat2[7]
-      tt3 = old_data[481]
-      tat3 = tt3.split('"')
-      wc = tat3[7]
-      tt4 = old_data[474]
-      tat4 = tt4.split('"')
-      rabota = tat4[7]
-      tt5 = old_data[459]
-      tat5 = tt5.split('"')
-      gidra = tat5[7]
-      tt6 = old_data[452]
-      tat6 = tt6.split('"')
-      bbboot = tat6[7]
-      tt7 = old_data[439]
-      tat7 = tt7.split('"')
-      texx = tat7[1]
-      tt8 = old_data[430]
-      tat8 = tt8.split('"')
-      oer = tat8[7]
